@@ -1,0 +1,6 @@
+@BigCimApi_HostAddress = http://localhost:5277
+
+GET {{BigCimApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,15 @@
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\bin\Debug\net8.0\Abstraction.deps.json
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\bin\Debug\net8.0\Abstraction.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\bin\Debug\net8.0\Abstraction.pdb
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\bin\Debug\net8.0\Core.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\bin\Debug\net8.0\Core.pdb
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.csproj.AssemblyReference.cache
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.AssemblyInfoInputs.cache
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.AssemblyInfo.cs
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.csproj.CoreCompileInputs.cache
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstract.2E1C7800.Up2Date
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\refint\Abstraction.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.pdb
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\ref\Abstraction.dll
