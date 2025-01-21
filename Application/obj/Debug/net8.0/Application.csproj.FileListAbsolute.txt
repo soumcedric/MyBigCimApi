@@ -15,3 +15,4 @@ D:\Codes Sources\MyBigCim\MyBigCim\Application\bin\Debug\net8.0\Abstraction.pdb
 D:\Codes Sources\MyBigCim\MyBigCim\Application\bin\Debug\net8.0\Core.pdb
 D:\Codes Sources\MyBigCim\MyBigCim\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
 D:\Codes Sources\MyBigCim\MyBigCim\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\Codes Sources\MyBigCim\MyBigCim\Application\obj\Debug\net8.0\Application.sourcelink.json

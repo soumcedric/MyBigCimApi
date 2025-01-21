@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BigCimApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ca4a7afaf3eef89c2efe580d9d7556868e38d0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BigCimApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BigCimApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

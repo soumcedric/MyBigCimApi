@@ -1,4 +1,5 @@
 ﻿using Application.Command;
+using Application.Command.Fonction;
 using Application.Dtos;
 using Core.Entity;
 using System;
@@ -9,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Application.Mapper
 {
-    internal static class FonctionMapper
+    static class FonctionMapper
     {
-        public static List<FonctionDto> ToDtos(this List<Fonction> value)
+        public static  List<FonctionDto> ToDtos(this List<Fonction> value)
         {
             List<FonctionDto> fonctions = new List<FonctionDto>();
 
@@ -27,6 +28,12 @@ namespace Application.Mapper
 
           return fonctions;
 
+        }
+
+        public static  Fonction ToRequest(this AddFonctionCommand command)
+        {
+            return new Fonction(command.Code, command.Libelle);
+           
         }
     }
 }

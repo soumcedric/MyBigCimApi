@@ -9,18 +9,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+ builder.Services.AddControllers();
 var _connectionStrings = builder.Configuration.GetConnectionString("DefaultConnection");
 
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("AllowAll",
-//               builder => builder.AllowAnyOrigin()
-//                          .AllowAnyMethod()
-//                                     .AllowAnyHeader());
-//});
 
-builder.Services.AddCors();
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://example.com",
+                                              "http://www.contoso.com");
+                      });
+});
+
+//builder.Services.AddCors();
 
 //Ajout du context
 builder.Services.AddDbContext<Infrastructure.ApplicationContext>(option => {
@@ -43,6 +47,8 @@ var app = builder.Build();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors();
 
 //suite ajout swagger
 if (app.Environment.IsDevelopment())

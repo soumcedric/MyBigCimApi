@@ -17,3 +17,4 @@ D:\Codes Sources\MyBigCim\MyBigCim\Infrastructure\obj\Debug\net8.0\Infrastructur
 D:\Codes Sources\MyBigCim\MyBigCim\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
 D:\Codes Sources\MyBigCim\MyBigCim\Infrastructure\bin\Debug\net8.0\Abstraction.dll
 D:\Codes Sources\MyBigCim\MyBigCim\Infrastructure\bin\Debug\net8.0\Abstraction.pdb
+D:\Codes Sources\MyBigCim\MyBigCim\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

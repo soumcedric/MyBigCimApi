@@ -174,3 +174,4 @@ D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\Swashbuckle.AspNet
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\Application.dll
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\Application.pdb
+D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.sourcelink.json

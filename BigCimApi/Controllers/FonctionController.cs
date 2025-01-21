@@ -1,9 +1,11 @@
 ﻿using Abstraction.Repositories;
 using Application.Command;
+using Application.Command.Fonction;
 using Application.Handler;
 using Application.Handler.Fonctions;
 using Application.Query.Fonctions;
 using Microsoft.AspNetCore.Mvc;
+using Application.Handler.Fonctions;
 
 namespace BigCimApi.Controllers
 {
@@ -17,9 +19,16 @@ namespace BigCimApi.Controllers
             _repository = repository;
         }
         [HttpPost]
-        public IActionResult Add(ServiceCmd cmd)
+        public IActionResult Post(AddFonctionCommand cmd)
         {
-            return Json(true);
+            
+            AddFonctionCommandHandler handler = new(_repository);
+            var retour = handler.Handle(cmd);
+            //if (string.IsNullOrEmpty(retour.Message))
+            //    return Ok();
+            //else
+            //    return BadRequest(retour.Message);
+            return Ok();
         }
 
         [HttpPut]

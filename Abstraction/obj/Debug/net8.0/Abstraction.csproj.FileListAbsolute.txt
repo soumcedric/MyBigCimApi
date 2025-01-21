@@ -13,3 +13,4 @@ D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.dll
 D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\refint\Abstraction.dll
 D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.pdb
 D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\ref\Abstraction.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Abstraction\obj\Debug\net8.0\Abstraction.sourcelink.json

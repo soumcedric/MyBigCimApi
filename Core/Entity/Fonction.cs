@@ -14,6 +14,19 @@ namespace Core.Entity
         public string Libelle {  get; private set; }
         [Column(TypeName = "Varchar(20)")]
         public string Code {  get; private set; }
-        
+
+        public Fonction()
+        {
+            
+        }
+
+        public Fonction(string libelle, string code)
+        {
+            Libelle = libelle;
+            Code = code;
+        }
+
+
+
     }
 }
