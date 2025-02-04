@@ -20,7 +20,7 @@ namespace Application.Mapper
             {
                 fonctions.Add(new FonctionDto
                 {
-                    //Id = x.Id,
+                    Id = x.Id,
                     Code = x.Code,
                     Libelle = x.Libelle
                 });

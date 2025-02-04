@@ -71,8 +71,16 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("DateModification")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("Varchar(50)");
+
                     b.Property<bool>("EstActif")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Matricule")
+                        .IsRequired()
+                        .HasColumnType("Varchar(15)");
 
                     b.Property<string>("Nom")
                         .IsRequired()
@@ -83,6 +91,10 @@ namespace Infrastructure.Migrations
                         .HasColumnType("Varchar(50)");
 
                     b.Property<string>("Telephone")
+                        .IsRequired()
+                        .HasColumnType("Varchar(15)");
+
+                    b.Property<string>("TelephoneProfessionnel")
                         .IsRequired()
                         .HasColumnType("Varchar(15)");
 

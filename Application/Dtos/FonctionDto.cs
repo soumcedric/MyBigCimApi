@@ -8,7 +8,7 @@ namespace Application.Dtos
 {
     public class FonctionDto
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Code { get; set; }
         public string Libelle { get; set; }
     }

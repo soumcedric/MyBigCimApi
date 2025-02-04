@@ -9,7 +9,7 @@ namespace Abstraction.Interface
     public interface IRequestHandler<Tcommand, TResponse> where Tcommand : class
                                                           where TResponse: class
     {
-        TResponse Handle(Tcommand command);
+      public  TResponse Handle(Tcommand command);
         
     }
 }

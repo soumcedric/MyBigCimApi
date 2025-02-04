@@ -1,6 +1,8 @@
 ﻿using Abstraction.Interface;
 using Abstraction.Repositories;
 using Application.Command;
+using Application.Dtos;
+using Application.Mapper;
 using Application.Query;
 using System;
 using System.Collections.Generic;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Application.Handler
 {
-    public class GetAllServiceQueryHandler : IRequestHandler<GetAllService, ObjectResponse<string>>
+    public class GetAllServiceQueryHandler : IRequestHandler<GetAllService, ObjectResponse<ServiceDto>>
     {
         IServiceRepository _service;
 
@@ -19,9 +21,23 @@ namespace Application.Handler
             _service = service;
         }
 
-        public ObjectResponse<string> Handle(GetAllService command)
+        public ObjectResponse<ServiceDto> Handle(GetAllService command)
         {
-            throw new NotImplementedException();
+            var retour = _service.FindAll();
+            if (retour == null)
+                return new ObjectResponse<ServiceDto>
+                {
+                    Message = "No data found",
+                };
+            else
+            {
+                List<ServiceDto> liste = new();
+                retour.ToList().ForEach(x => liste.Add(x.ToDto()));
+                return new ObjectResponse<ServiceDto>
+                {
+                    Response = liste
+                };
+            }
         }
     }
 }

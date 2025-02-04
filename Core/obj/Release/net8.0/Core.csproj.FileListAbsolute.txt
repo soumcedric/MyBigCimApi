@@ -1,0 +1,13 @@
+D:\Codes Sources\MyBigCim\MyBigCim\Core\bin\Release\net8.0\Core.deps.json
+D:\Codes Sources\MyBigCim\MyBigCim\Core\bin\Release\net8.0\Core.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Core\bin\Release\net8.0\Core.pdb
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.csproj.AssemblyReference.cache
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.AssemblyInfoInputs.cache
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.AssemblyInfo.cs
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.csproj.CoreCompileInputs.cache
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.sourcelink.json
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\refint\Core.dll
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\Core.pdb
+D:\Codes Sources\MyBigCim\MyBigCim\Core\obj\Release\net8.0\ref\Core.dll

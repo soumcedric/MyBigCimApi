@@ -15,8 +15,8 @@ namespace BigCimApi.Controllers
             _service = service;
         }
         [HttpPost]
-        [Route("Add")]
-        public IActionResult Add(ServiceCmd cmd)
+       // [Route("Add")]
+        public IActionResult Post(ServiceCmd cmd)
         {
             AddServiceHandler handler = new(_service);
             handler.Handle(cmd);
@@ -36,6 +36,19 @@ namespace BigCimApi.Controllers
         public IActionResult Delete(ServiceCmd cmd)
         {
             return Json(true);
+        }
+
+        [HttpGet]
+        //[Route("Delete")]
+        public IActionResult Get()
+        {
+            GetAllServiceQueryHandler handler = new(_service);
+            var retour = handler.Handle(new());
+            if (string.IsNullOrEmpty(retour.Message))
+                return Ok(retour.Response);
+            else
+                return BadRequest(retour.Message);
+            
         }
 
     }

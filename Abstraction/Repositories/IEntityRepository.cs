@@ -13,5 +13,6 @@ namespace Abstraction.Repositories
         void Delete(TEntity entity);
         TEntity FindById(Guid id);
         IEnumerable<TEntity> FindAll();
+        void Dispose();
     }
 }

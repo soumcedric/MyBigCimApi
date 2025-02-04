@@ -6,6 +6,7 @@ using Application.Handler.Fonctions;
 using Application.Query.Fonctions;
 using Microsoft.AspNetCore.Mvc;
 using Application.Handler.Fonctions;
+using Application.Command.Common;
 
 namespace BigCimApi.Controllers
 {
@@ -36,10 +37,14 @@ namespace BigCimApi.Controllers
         {
             return Json(true);
         }
-        [HttpDelete]
-        public IActionResult Delete(ServiceCmd cmd)
+        [HttpDelete("{id}")]
+        public IActionResult Delete(string id)
         {
-            return Json(true);
+            DeleteCommand cmd = new();
+            cmd.Id = Guid.Parse(id);
+            DeleteFonctionCommandHandler handler = new(_repository);
+            var retour = handler.Handle(cmd);
+            return Ok();
         }
 
         [HttpGet]

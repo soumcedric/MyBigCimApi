@@ -38,6 +38,7 @@ builder.Services.AddSwaggerGen();
 //injection des dépendances
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IFonctionRepository, FonctionRepository>();
+builder.Services.AddScoped<IEmployeRepository, EmployeRepository>();
 
 
 var app = builder.Build();
@@ -51,7 +52,7 @@ app.MapControllers();
 app.UseCors();
 
 //suite ajout swagger
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();

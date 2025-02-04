@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\EmployeController.cs" />
     <Compile Remove="Controllers\EmployeFonctionController.cs" />
   </ItemGroup>
 
