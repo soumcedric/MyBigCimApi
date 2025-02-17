@@ -4,6 +4,15 @@ using Abstraction.Interface;
 using Application.Handler;
 using Abstraction.Repositories;
 using Infrastructure.Repositories;
+using Application.Command.Employe;
+using Microsoft.AspNetCore.Mvc;
+using Application.Handler.Employe;
+using Application.Command.EmployeFonction;
+using Application;
+using Application.Handler.EmployeFonction;
+using Application.Query.EmployeFonction;
+using Application.Dtos;
+using Application.Handler.EmployeFonction.Query;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,6 +48,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IFonctionRepository, FonctionRepository>();
 builder.Services.AddScoped<IEmployeRepository, EmployeRepository>();
+builder.Services.AddScoped<IEmployeFonctionRepository, EmployeFonctionRepository>();
+
+builder.Services.AddScoped<ICommandHandler<AddEmployeFonctionCommand,ObjectResponse<string>>, AddEmployeFonctionCommandHandler>();
+builder.Services.AddScoped<IRequestHandler<GetEmployeFonctionQuery, ObjectResponse<EmployeFonctionDto>>, GetEmployeFonctionQueryHandler>();
 
 
 var app = builder.Build();

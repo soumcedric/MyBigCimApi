@@ -77,8 +77,18 @@ namespace BigCimApi.Controllers
         }
 
         [HttpPost]
+        [Route("EmployeByCriteria")]
+        public IActionResult EmployeByCriteria()
+        {
+            
+
+            return NoContent();
+
+        }
+
+        [HttpPost]
         [Route("GetByCriteria")]
-        public IActionResult Get(EmployeByCriteria value)
+        public IActionResult GetByCriteria(EmployeByCriteria value)
         {
             EmployeByCriteriaQueryHandler handler = new(_repository);
             var retour = handler.Handle(value);
@@ -86,8 +96,9 @@ namespace BigCimApi.Controllers
                 return Ok(retour.Response);
             else
                 return BadRequest(retour.Message);
-
         }
+
+
 
 
     }

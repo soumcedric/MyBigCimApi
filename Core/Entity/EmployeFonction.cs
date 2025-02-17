@@ -11,5 +11,18 @@ namespace Core.Entity
         public Fonction Fonction { get; set; }
         public Employe Employe { get; set; }
         public Service Service { get; set; }
+
+        public EmployeFonction()
+        {
+            
+        }
+
+
+        //public EmployeFonction(Employe employe, Fonction fonction, Service service)
+        //{
+        //    Employe = employe;
+        //    Fonction = fonction;
+        //    Service = service;
+        //}
     }
 }

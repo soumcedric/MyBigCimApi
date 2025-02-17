@@ -21,7 +21,8 @@ namespace Application.Handler.Employe
         }
         public ObjectResponse<EmployeDto> Handle(EmployeByCriteria command)
         {
-            if (command == null) {
+            if (command == null)
+            {
                 return new ObjectResponse<EmployeDto>
                 {
                     Message = "Parameter not valid",

@@ -1,4 +1,5 @@
 ﻿using Abstraction.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,13 @@ namespace Infrastructure.Repositories
         {
             Context.Update(entity);
             Context.SaveChanges();
+        }
+
+        public IEnumerable<TEntity> FindAllWithInclude()
+        {
+            IQueryable<TEntity> query = Context.Set<TEntity>();
+            var result = query.Include("Employe").Include("Fonction").Include("Service");
+            return result.ToList();
         }
     }
 }
