@@ -14,7 +14,7 @@ namespace Abstraction.Repositories
         void Delete(TEntity entity);
         TEntity FindById(Guid id);
         IEnumerable<TEntity> FindAll();
-        IEnumerable<TEntity> FindAllWithInclude();
+        IEnumerable<TEntity> FindAllWithInclude(params string[] includeProperties);
         void Dispose();
     }
 }

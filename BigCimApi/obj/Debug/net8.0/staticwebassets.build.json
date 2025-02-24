@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "3B+ow2WTvFNikzaZofxfOqpmPo2qFplihpxHT1v/dPE=",
+  "Hash": "myd6NyEEvl8ORwEkc2eFZ11MXbydfQyE9VGy7xYQzy4=",
   "Source": "BigCimApi",
   "BasePath": "_content/BigCimApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

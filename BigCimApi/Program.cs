@@ -13,6 +13,10 @@ using Application.Handler.EmployeFonction;
 using Application.Query.EmployeFonction;
 using Application.Dtos;
 using Application.Handler.EmployeFonction.Query;
+using Application.Command.Demande;
+using Application.Handler.Demande;
+using Application.Query.Demande;
+using Application.Handler.Demande.Query;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,9 +53,13 @@ builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IFonctionRepository, FonctionRepository>();
 builder.Services.AddScoped<IEmployeRepository, EmployeRepository>();
 builder.Services.AddScoped<IEmployeFonctionRepository, EmployeFonctionRepository>();
+builder.Services.AddScoped<IDemandeRepository, DemandeRepository>();
 
 builder.Services.AddScoped<ICommandHandler<AddEmployeFonctionCommand,ObjectResponse<string>>, AddEmployeFonctionCommandHandler>();
 builder.Services.AddScoped<IRequestHandler<GetEmployeFonctionQuery, ObjectResponse<EmployeFonctionDto>>, GetEmployeFonctionQueryHandler>();
+builder.Services.AddScoped<ICommandHandler<AddDemandeCommand, ObjectResponse<string>>, AddDemandeCommandHandler>();
+builder.Services.AddScoped<IRequestHandler<GetAllDemandeQuery, ObjectResponse<DemandeDto>>, GetAllDemandeQueryHandler>();
+builder.Services.AddScoped<IRequestHandler<GetDemandesByEmployeQuery, ObjectResponse<DemandeDto>>, GetDemandesByEmployeQueryHandler>();
 
 
 var app = builder.Build();

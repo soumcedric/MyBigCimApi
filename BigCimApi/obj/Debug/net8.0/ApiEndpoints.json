@@ -1,0 +1,269 @@
+[
+  {
+    "ContainingType": "BigCimApi.Controllers.DemandeController",
+    "Method": "Post",
+    "RelativePath": "api/Demande/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Command.Demande.AddDemandeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.DemandeController",
+    "Method": "Get",
+    "RelativePath": "api/Demande/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.DemandeController",
+    "Method": "Get",
+    "RelativePath": "api/Demande/GetDemandesByEmploye",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmployeId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "TypeDemande",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeController",
+    "Method": "Put",
+    "RelativePath": "api/Employe",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.Command.Employe.UpdateEmployeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeController",
+    "Method": "Delete",
+    "RelativePath": "api/Employe",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.Command.Common.DeleteCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeController",
+    "Method": "Get",
+    "RelativePath": "api/Employe",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeController",
+    "Method": "Post",
+    "RelativePath": "api/Employe/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeController",
+    "Method": "EmployeByCriteria",
+    "RelativePath": "api/Employe/EmployeByCriteria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeController",
+    "Method": "GetByCriteria",
+    "RelativePath": "api/Employe/GetByCriteria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "Application.Command.Employe.EmployeByCriteria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeFonctionController",
+    "Method": "Add",
+    "RelativePath": "api/EmployeFonction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Command.EmployeFonction.AddEmployeFonctionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.EmployeFonctionController",
+    "Method": "GetAllEmployeFonction",
+    "RelativePath": "api/EmployeFonction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.FonctionController",
+    "Method": "Post",
+    "RelativePath": "api/Fonction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.Command.Fonction.AddFonctionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.FonctionController",
+    "Method": "Update",
+    "RelativePath": "api/Fonction",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.Command.ServiceCmd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.FonctionController",
+    "Method": "Get",
+    "RelativePath": "api/Fonction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.FonctionController",
+    "Method": "Delete",
+    "RelativePath": "api/Fonction/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.ServiceController",
+    "Method": "Post",
+    "RelativePath": "api/Service",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.Command.ServiceCmd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.ServiceController",
+    "Method": "Get",
+    "RelativePath": "api/Service",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.ServiceController",
+    "Method": "Delete",
+    "RelativePath": "api/Service/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.Command.ServiceCmd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BigCimApi.Controllers.ServiceController",
+    "Method": "Update",
+    "RelativePath": "api/Service/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.Command.ServiceCmd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

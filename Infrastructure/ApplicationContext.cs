@@ -40,6 +40,7 @@ namespace Infrastructure
         public DbSet<Core.Entity.EmployeFonction> EmployeFonction { get; set; }
         public DbSet<Core.Entity.Employe> Employes { get; set; }
         public DbSet<Core.Entity.Demande> Demande { get; set; }
+        public DbSet<Core.Entity.Validations> Validation { get; set; }
 
     }
 }

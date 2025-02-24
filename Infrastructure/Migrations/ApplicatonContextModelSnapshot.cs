@@ -28,13 +28,23 @@ namespace Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Commentaire")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("DateCreation")
                         .HasColumnType("datetime2");
+
+                    b.Property<DateOnly>("DateDebut")
+                        .HasColumnType("date");
+
+                    b.Property<DateOnly>("DateFin")
+                        .HasColumnType("date");
 
                     b.Property<DateTime>("DateModification")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("EmployeFonctionId")
+                    b.Property<Guid>("EmployeId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("EstActif")
@@ -54,7 +64,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EmployeFonctionId");
+                    b.HasIndex("EmployeId");
 
                     b.ToTable("Demande");
                 });
@@ -218,15 +228,61 @@ namespace Infrastructure.Migrations
                     b.ToTable("Service");
                 });
 
+            modelBuilder.Entity("Core.Entity.Validations", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Commentaire")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateCreation")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateModification")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateValidation")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("DemandeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("EmployeValidateurId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("EstActif")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Statut")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("UtilisateurCreation")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UtilisateurModification")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DemandeId");
+
+                    b.HasIndex("EmployeValidateurId");
+
+                    b.ToTable("Validation");
+                });
+
             modelBuilder.Entity("Core.Entity.Demande", b =>
                 {
-                    b.HasOne("Core.Entity.EmployeFonction", "EmployeFonction")
+                    b.HasOne("Core.Entity.Employe", "Employe")
                         .WithMany()
-                        .HasForeignKey("EmployeFonctionId")
+                        .HasForeignKey("EmployeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("EmployeFonction");
+                    b.Navigation("Employe");
                 });
 
             modelBuilder.Entity("Core.Entity.EmployeFonction", b =>
@@ -254,6 +310,25 @@ namespace Infrastructure.Migrations
                     b.Navigation("Fonction");
 
                     b.Navigation("Service");
+                });
+
+            modelBuilder.Entity("Core.Entity.Validations", b =>
+                {
+                    b.HasOne("Core.Entity.Demande", "Demande")
+                        .WithMany()
+                        .HasForeignKey("DemandeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Core.Entity.Employe", "EmployeValidateur")
+                        .WithMany()
+                        .HasForeignKey("EmployeValidateurId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Demande");
+
+                    b.Navigation("EmployeValidateur");
                 });
 #pragma warning restore 612, 618
         }

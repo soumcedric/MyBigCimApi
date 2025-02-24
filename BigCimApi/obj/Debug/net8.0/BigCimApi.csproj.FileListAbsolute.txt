@@ -1,5 +1,6 @@
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\appsettings.Development.json
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\appsettings.json
+D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\BigCimApi.staticwebassets.endpoints.json
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\BigCimApi.exe
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\BigCimApi.deps.json
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\bin\Debug\net8.0\BigCimApi.runtimeconfig.json
@@ -161,14 +162,17 @@ D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.csproj.C
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.sourcelink.json
+D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\scopedcss\bundle\BigCimApi.styles.css
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets.build.json
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets.development.json
+D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets\msbuild.BigCimApi.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets\msbuild.BigCimApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets\msbuild.build.BigCimApi.props
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BigCimApi.props
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BigCimApi.props
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\scopedcss\bundle\BigCimApi.styles.css
+D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.csproj.Up2Date
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\BigCimApi.dll
 D:\Codes Sources\MyBigCim\MyBigCim\BigCimApi\obj\Debug\net8.0\refint\BigCimApi.dll

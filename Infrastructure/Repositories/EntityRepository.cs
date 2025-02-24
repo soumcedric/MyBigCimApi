@@ -54,11 +54,20 @@ namespace Infrastructure.Repositories
             Context.SaveChanges();
         }
 
-        public IEnumerable<TEntity> FindAllWithInclude()
+        public IEnumerable<TEntity> FindAllWithInclude(params string[] includeProperties)
         {
             IQueryable<TEntity> query = Context.Set<TEntity>();
-            var result = query.Include("Employe").Include("Fonction").Include("Service");
-            return result.ToList();
+
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return query.ToList();
+
+            //IQueryable<TEntity> query = Context.Set<TEntity>();
+            //var result = query.Include("Employe").Include("Fonction").Include("Service");
+            //return result.ToList();
         }
     }
 }
